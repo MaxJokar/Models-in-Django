@@ -1,0 +1,19 @@
+{%  extends  'maintemplate.html' %}
+
+{% block content %}
+    <h1 class="blog-title">List of  Article </h1>
+    {% for author in authors %}
+      <h3> {{author.name}}-{{author.family}}</h3>
+    {% endfor %}  
+{% endblock  %}
+
+{% block title %}
+    Article Lists 
+{% endblock  %}
+
+
+        
+
+
+
+
